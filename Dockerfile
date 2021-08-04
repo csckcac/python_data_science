@@ -15,6 +15,8 @@ RUN pip3 install tensorflow && \
     pip3 install opencv-python && \
     pip3 install imutils
 
+RUN pip3 install tqdm
+
 RUN ["mkdir", "notebooks"]
 COPY conf/.jupyter /root/.jupyter
 COPY run_jupyter.sh /
